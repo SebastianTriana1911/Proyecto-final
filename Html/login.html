@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Inspeccion busqueda</title>
-    <link rel="stylesheet" href="/Css/inspeccion-busqueda.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="/Css/login.css">
     <script src="https://kit.fontawesome.com/10d9a6ff24.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -10,7 +10,7 @@
         <section id="areas">
 
             <header id="header">
-
+                
                 <section id="contenedor-logo">
                     <span>S<span id="s-amarilla">S</span></span>
                 </section>
@@ -21,42 +21,71 @@
                 </section>
 
             </header>
-<!--------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------->
 
-            <section id="content">
+            <section id="contenedor-login">
 
-                <section id="contenedor-buscador">
+                <article id="contenedor-imagen">
+                    <img id="logo" src="/Img/Logo-png.png"/>
+                </article>
+                
+                <section id="contenedor-2">
+                    <section id="primera-barra">
+                        <h1 id="titulo">Que usuario eres</h1>
 
-                    <section id="contenedor-imagen">
-                        <article id="img">
-                            <img id="img-buscador" src="/Img/imagen-2.jpeg" alt="imagen-buscador">
-                        </article>
-                    </section>
+                        <section id="barra-checkbox">
 
+                            <article>
+                                <input id="checkbox" type="checkbox"/>
+                                <h4 id="usuario">Admin</h4>
+                            </article>
 
-                    <section id="cuadro">
+                            <article>
+                                <input id="checkbox" type="checkbox"/>
+                                <h4 id="usuario">Instructor</h4>
+                            </article>
 
-                        <section id="informacion-contenedor">
+                            <article>
+                                <input id="checkbox" type="checkbox"/>
+                                <h4 id="usuario">Seleccionador</h4>
+                            </article>
 
-                            <article id="cont-titulo">
-                                <h1 id="titulo-buscador">Buscador de empleos</h1>
-                                <h1 id="barra"></h1>
+                            <article>
+                                <input name="check" id="checkbox" type="checkbox"/>
+                                <h4 id="usuario">Reclutador</h4>
                             </article>
                             
-                            <input type="text" placeholder="Consulte las diferentes vacantes disponibles">
-
-                            <section id="botones">
-                                <a id="boton-volver" href="index.html">Volver</a>
-                                <a id="boton-buscar" href="inspeccion-vacantes.html" target="_blank">Buscar</a>
-                            </section>
-
-                        </section>
+                            <article>
+                                <input id="checkbox" type="checkbox"/>
+                                <h4 id="usuario">Candidato</h4>
+                            </article>
 
                     </section>
-                
+
+                    </section>
+
+                    <section id="segunda-barra">
+
+                        <article>
+                            <label for="input-1" id="num-documento">Num Documento:</label>
+                            <input name="input-1" id="input-1" type="number" placeholder="Ingrese su numero de documeto">
+                        </article>
+
+                        <article>
+                            <label for="input-2" id="contraseña">Contraseña:</label>
+                            <input name="input-2" id="input-2" type="password" placeholder="Ingrese su contraseña">
+                        </article>
+
+                    </section>
+
+                    <section id="tercera-barra">
+                        <a id="iniciar" href="" target="_blank">Iniciar</a>
+                        <a id="olvido" href="" target="_blank">¿Olvidaste tu contraseña?</a>
+                    </section>
+
                 </section>
 
-            </section>
+            </section>                
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------->
 

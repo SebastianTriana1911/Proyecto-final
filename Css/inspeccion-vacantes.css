@@ -56,111 +56,164 @@ main {
 /* -------------------------------------------------------- ETIQUETA SECTION ------------------------------------------------------------------ */
 
 #content {
-    display: flex;
     grid-area: content;
-    flex-direction: column;
-    height: 500px;
-}
-
-#contenedor-imagen {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 65%;
-    height: 65%;
-    margin-top: 30px;
-}
-
-#img-buscador {
     width: 100%;
-    height: 90%;
-    border-radius: 20px;
-    opacity: 0.7;
-    border: none;
-    box-shadow: 0 0 20px white;
-}
-
-#img-buscador:hover {
-    box-shadow: 0 0 45px white;
-    transition: 0.4s;
-}
-
-#img {
-    width: 70%;
     height: 100%;
 }
 
-#cuadro {
-    background-color: rgba(0, 0, 0, 0.703);
-    backdrop-filter: blur(1px);
-    border-radius: 15px;
-    width: 30%;
-    height: 35%;
-    top: -139px;
-    position: relative;
-    margin: auto;
-    box-shadow: 0 0 10px white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#barra-principal {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#cuadro:hover {
-    box-shadow: 0 0 20px white;
+#cantidad-vacantes {
+    font-size: 20pt;
+}
+
+#barra-principal input {
+    width: 40%;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color:black;
+    box-shadow: 0 0 7px white;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#barra-principal input::placeholder {
+    color:white;
+    font-weight: 600;
+    text-align: center;
+}
+
+#barra-principal input:hover {
+    box-shadow: 0 0 15px white;
     transition: 0.4s;
 }
 
-#informacion-contenedor{
+#esquema {
+    width: 100%;
+    height: 392px;
+}
+
+#conjunto-ofertas {
     display: flex;
-    align-items: center;
-    flex-direction: column; 
-}
-
-#cont-titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#titulo-buscador {
-    font-size: 18pt;
-    color: white;
-}
-
-#barra {
-    width: 80%;
-    height: 3px;
-    background-color: #FFD966;
-    box-shadow: 0 0 10px #FFD966;
-}
-
-#informacion-contenedor input {
-    width: 80%;
-    height: 25px;
-    background-color: black;
+    justify-content: center; 
+    width: 60%;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 40px;
+    flex-wrap: wrap;
     border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: 0 0 7px white;
-    padding: 8px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px white;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#conjunto-ofertas:hover {
+    box-shadow: 0 0 30px white;
+    transition: 0.4s;
+}
+
+#contenedor-oferta {
+    width: 85%;
+    height: 80%;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 20px;
+    border: 3px solid black
+}
+
+#contenedor-oferta:hover {
+    box-shadow: 0 0 30px white;
+    transition: 0.4s;
+}
+
+#oferta {
+    display:grid;
+    grid-template-columns: 180px 1fr;
+    margin: 13px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 34px;
+    margin-top: 10px;
+}
+
+#oferta #numero-oferta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25pt;
+}
+
+#oferta #titulo-oferta {
+    display: flex;
+    align-items: center;
+}
+
+#salario,#experiencia-meses, #num-vacantes, #postulaciones, #fecha-inicion, #fecha-cierre {
+    display: block;
+    margin: 5px;
+}
+
+#lugar {
+    margin: 5px
+}
+
+#boton-postularme #postularme {
+    display: flex;
+    width: 18%;
+    margin: auto;
+    background-color: #FFD966;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    border: black;
+    box-shadow: 0 0 3px black;
+    font-size: 12pt;
+    cursor: pointer;
     margin-top: 15px;
-    color:white;
-    font-weight: 1000;
-    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
 }
 
-#cuadro input::placeholder {
+#boton-postularme #postularme:hover {
+    background-color: black;
+    color: #FFD966;
+    transition: 0.4s;
+}
+
+#conjunto-ofertas::-webkit-scrollbar{
+    width: 10px;
+}
+
+#conjunto-ofertas::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+
+#boton-volver {
     display: flex;
-    color: white;
-    font-weight: 1000;
-    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-#botones {
-    display: flex;
-    gap: 30px
-}
-
-#boton-buscar, #boton-volver {
+#volver {
     background-color: #FFD966;
     color: black;
     padding: 10px;
@@ -174,14 +227,7 @@ main {
     font-weight: 700;
 }
 
-#boton-buscar:hover {
-    background-color: black;
-    color: #FFD966;
-    transition: 0.4s;
-    box-shadow: 0 0 15px #FFD966;
-}
-
-#boton-volver:hover {
+#volver:hover {
     background-color: black;
     color: #FFD966;
     transition: 0.4s;

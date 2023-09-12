@@ -8,19 +8,14 @@
 /* Se desea que todo lo que contenga la etiqueta main tenga un color de fondo negro y el color de letra blanco */
 main {
     background-color: black;
-    color:white
-}
-
-/* Se inicializa 2 columnas por 3 filas que se dividiran en el header countent y foooter, sus proporciones en columna
-se dan con grid-column y las proporciones en fila con grid-row */
-#areas {
+    color:white;
     display: grid;
-    grid-column: 1fr 1fr;
-    grid-row: 10vh 60vh 30vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 60% 30%;
     grid-template-areas: 
-    "header    header"
-    "content   content-2"
-    "footer    footer";
+    "header       header"
+    "contenedor   contenedor2"
+    "footer       footer";
 }
 
 /*------------------------------------------------- ETIQUETA HEADER ----------------------------------------------------------------------------*/
@@ -30,11 +25,11 @@ a borde de la pagina, donde tendra un espacio dentro del contenedor de 25px con 
 le tendra que pasar las proporciones que tendra en la pagina por eso se le asigna a la propiedad grid-area: que ocupara todo el
 header */
 #header {
-    color: white;
+    grid-area: header;
     display:flex;
     justify-content: space-between;
+    color: white;
     padding: 25px;
-    grid-area: header;
     border-bottom: 3px solid white;
     font-size: 23pt;
 }
@@ -60,7 +55,6 @@ font-weight toma un peso de 1000 */
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     font-weight: 1000;
 }
 
@@ -72,16 +66,13 @@ font-weight toma un peso de 1000 */
 /*------------------------------------------- ETIQUETA SECTION "CONTENEDOR-WELCOME" INFORMACION ------------------------------------------------*/
 
 /* Este contenedor hace referencia a todo el contenedor de informacion */
-#contenedor-welcome {
-    display: flex;
-    align-items: center;
-}
 
 /* Este contenedor contiene toda la informacion por eso se le asigna la columna de grid-area content y dicho contenedor tendra una 
 anchura del 95% del contenedor padre*/
 #area-content {
-    grid-area: content;
+    grid-area: contenedor;
     width: 95%;
+    background-color: aqua;
 }
 
 /* Este contenedor contendra toda la informacion que hay en la pagina, todo el contenido que este dentro del contenedor esta en 
@@ -91,6 +82,7 @@ forma de columna y toda la informacion estara en el centro del contenedor y ocup
     flex-direction: column;
     justify-content: center;
     width: 73%;
+    height: 100%;
     margin-left: 150px;
 }
 
@@ -127,7 +119,6 @@ y esten ceparados en 40px*/
 #boton-informacion {
     display: flex;
     gap: 40px;
-    margin-top: 50px;
 }
 
 /* Todas las etiquetas a del contenedor boton-informacion contendra dichas propiedades donde cabe recalcar font-weight: 650
@@ -155,6 +146,12 @@ contiene debajo con un text-decoration: none*/
 }
 
 /*------------------------------------------- ETIQUETA SECTION "CONTENEDOR-WELCOME" IMAGEN ------------------------------------------------*/
+
+
+#contenedor-2 {
+    grid-column: 2/3;
+    background-color: blue;
+}
 
 #content-2 {
     grid-area: content-2;

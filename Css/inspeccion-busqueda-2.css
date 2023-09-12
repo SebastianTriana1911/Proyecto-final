@@ -96,7 +96,6 @@
 
 .contenedor-buscador .contenedor-cuadro {
     display: flex;
-    justify-content: center;
     width: 30%;
     height: 100%;
     box-shadow: 0 0 10px white;
@@ -111,29 +110,59 @@
 }
 
 .contenedor-buscador .contenedor-cuadro .informacion {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .contenedor-buscador .contenedor-cuadro .informacion .titulo {
     display: flex;
     justify-content: center;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 .contenedor-buscador .contenedor-cuadro .informacion .barra {
     margin: 0 auto;
-    width: 84%;
+    width: 40%;
     height: 3px;
     border-radius: 5px;
     background-color: #FFD966;
     box-shadow: 0 0 10px #FFD966;
 }
 
-.contenedor-buscador .contenedor-cuadro .informacion .input {
-
+.contenedor-buscador .contenedor-cuadro .informacion .contenedor-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 13%;
 }
 
+.contenedor-buscador .contenedor-cuadro .informacion .input {
+    width: 70%;
+    height: 100%;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+    padding: 8px;
+    color: white;
+    font-weight: 1000;
+    text-align: center;
+}
 
+.contenedor-buscador .contenedor-cuadro .informacion .input::placeholder {
+    display: flex;
+    color: white;
+    font-weight: 1000;
+    text-align: center;
+}
 
+.contenedor-buscador .contenedor-cuadro .informacion .botones {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}

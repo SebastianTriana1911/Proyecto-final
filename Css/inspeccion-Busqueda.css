@@ -3,76 +3,71 @@
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    padding: 0px;
 }
 
-main {
-    background-color: black;
-    color:white
-}
-
-#areas {
+.page {
     display: grid;
-    grid-row: 10vh 60vh 30vh;
-    grid-template-areas:
+    height: 100%;
+    grid-template-rows: 10vh 75vh 15vh;
+    grid-template-areas: 
     "header"
     "content"
-    "footer";
+    "footer"  ;
 }
 
-/* -------------------------------------------------------- ETIQUETA HEADER ------------------------------------------------------------------ */
 
-#header {
-    color: white;
-    display:flex;
-    justify-content: space-between;
-    padding: 25px;
+.header {
+    display: flex;
     grid-area: header;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
     border-bottom: 3px solid white;
     font-size: 23pt;
-}
-
-#contenedor-logo {
+    align-items: center;
+    padding-left: 25px;
     font-weight: 1000;
 }
 
-#s-amarilla {
-    color: #FFD966;
-    margin-left: 3px;
+.header .contenedor-logo {
+    display: flex;
+    gap: 2px
 }
 
-#selection-system {
+.header .contenedor-logo .s-amarilla {
+    color: #FFD966;
+}
+
+.header .titulo {
     display: flex;
     width: 100%;
+    justify-content: center;
+}
+
+.header .titulo .system {
+    color: #FFD966;
+}
+
+/*-------------------------------------------------------------*/
+
+.contenedor-content {
+    grid-area: content;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-content .contenedor-imagen {
+    display: flex;
+    width: 100%;
+    height: 75%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    font-weight: 1000;
 }
 
-#system {
-    color:#FFD966;
-}
-
-/* -------------------------------------------------------- ETIQUETA SECTION ------------------------------------------------------------------ */
-
-#content {
-    display: flex;
-    grid-area: content;
-    flex-direction: column;
-    height: 500px;
-}
-
-#contenedor-imagen {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 65%;
-    height: 65%;
-    margin-top: 30px;
-}
-
-#img-buscador {
-    width: 100%;
+.contenedor-content .contenedor-imagen .imagen{
+    width: 50%;
     height: 90%;
     border-radius: 20px;
     opacity: 0.7;
@@ -80,169 +75,188 @@ main {
     box-shadow: 0 0 20px white;
 }
 
-#img-buscador:hover {
+.contenedor-content .contenedor-imagen .imagen:hover{
     box-shadow: 0 0 45px white;
     transition: 0.4s;
 }
 
-#img {
-    width: 70%;
-    height: 100%;
-}
+/*-------------------------------------------------------------*/
 
-#cuadro {
-    background-color: rgba(0, 0, 0, 0.703);
-    backdrop-filter: blur(1px);
-    border-radius: 15px;
-    width: 30%;
-    height: 35%;
-    top: -139px;
-    position: relative;
-    margin: auto;
-    box-shadow: 0 0 10px white;
+.contenedor-buscador {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 35%;
+    position: relative;
+    top: -21%;
     justify-content: center;
 }
 
-#cuadro:hover {
-    box-shadow: 0 0 20px white;
-    transition: 0.4s;
-}
-
-#informacion-contenedor{
+.contenedor-buscador .contenedor-cuadro {
     display: flex;
-    align-items: center;
-    flex-direction: column; 
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 0 10px white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.703);
+    backdrop-filter: blur(1px);
 }
 
-#cont-titulo {
+.contenedor-buscador .contenedor-cuadro:hover {
+    box-shadow: 0 0 20px white;
+    transition: 0.4s ease-in-out;
+}
+
+.contenedor-buscador .contenedor-cuadro .informacion {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
 }
 
-#titulo-buscador {
+.contenedor-buscador .contenedor-cuadro .informacion .titulo {
+    display: flex;
+    justify-content: center;
     font-size: 18pt;
-    color: white;
 }
 
-#barra {
-    width: 80%;
+.contenedor-buscador .contenedor-cuadro .informacion .barra {
+    margin: 0 auto;
+    width: 40%;
     height: 3px;
+    border-radius: 5px;
     background-color: #FFD966;
     box-shadow: 0 0 10px #FFD966;
 }
 
-#informacion-contenedor input {
+.contenedor-buscador .contenedor-cuadro .informacion .contenedor-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 17%;
+}
+
+.contenedor-buscador .contenedor-cuadro .informacion .input {
     width: 80%;
-    height: 25px;
+    height: 100%;
     background-color: black;
+    border: none;
     border-radius: 10px;
     border: 1px solid white;
-    box-shadow: 0 0 7px white;
+    box-shadow: 0 0 10px white;
     padding: 8px;
-    margin-top: 15px;
-    color:white;
+    color: white;
     font-weight: 1000;
     text-align: center;
 }
 
-#cuadro input::placeholder {
+.contenedor-buscador .contenedor-cuadro .informacion .input::placeholder {
     display: flex;
     color: white;
     font-weight: 1000;
     text-align: center;
 }
 
-#botones {
+.contenedor-buscador .contenedor-cuadro .informacion .botones {
     display: flex;
-    gap: 30px
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
 }
 
-#boton-buscar, #boton-volver {
+.contenedor-buscador .contenedor-cuadro .informacion .botones 
+.boton-buscar, .boton-volver {
     background-color: #FFD966;
     color: black;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 0 0 10px #FFD966;
-    font-size: 12pt;
-    cursor: pointer;
-    margin-top: 15px;
+    font-weight: bolder;
     text-decoration: none;
-    font-weight: 700;
+    padding: 1.5%;
+    border-radius: 15px;
+    font-size: 13pt;
+    box-shadow: 0 0 10px #FFD966;
+    border: none;
+    cursor: pointer;
 }
 
-#boton-buscar:hover {
+.contenedor-buscador .contenedor-cuadro .informacion .botones 
+.boton-buscar:hover{
     background-color: black;
     color: #FFD966;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
     box-shadow: 0 0 15px #FFD966;
 }
 
-#boton-volver:hover {
+.contenedor-buscador .contenedor-cuadro .informacion .botones 
+.boton-volver:hover{
     background-color: black;
     color: #FFD966;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
     box-shadow: 0 0 15px #FFD966;
 }
 
-/* -------------------------------------------------------- ETIQUETA FOOTER ------------------------------------------------------------------ */
+/*-------------------------------------------------------------*/
 
-footer {
+.footer {
     grid-area: footer;
     background-color: #FFD966;
-    box-shadow: 0 0 10px #FFD966;
+    height: 100%;
 }
 
-footer:hover {
-    box-shadow: 0 0 40px #FFD966;
-    transition: 0.4s;
+.footer:hover{
+    box-shadow: 0 0 30px #FFD966;
+    transition: 0.5s;
 }
 
-#union {
+.footer .contenedor-footer {
     display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .contenedor-imagen {
+    width: 15%;
+    margin-left: 15px;
+    height: 100%;
+}
+
+.footer .contenedor-footer .contenedor-imagen .logo-png{
+    width: 65%;
+    height: 95%;
+}
+
+.footer .contenedor-footer .informacion {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
 }
 
-#contenedor-img {
-    width: 7%;
-    margin-left: 10px;
-}
-
-#logo-png {
-    display: flex;
-    width: 160px;
-    height: 117px;
-}
-
-#info-footer {
-    display: flex;
-    color: black;
-    width: 90%;
-    justify-content: space-evenly;
-}
-
-#sebas,#william,#peter,#capera {
+.sebas,.william,.peter,.capera {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
 }
 
-#apps {
+.footer .contenedor-footer .informacion article .apps {
     display: flex;
-    gap: 25px;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-between;
 }
 
-#apps i{
-    color:black
+.footer .contenedor-footer .informacion article .apps i {
+    color: black;
+    
 }
 
-#apps i:hover{
-    color:black;
-    font-size: 23px;
-    transition: 0.3s;
+.footer .contenedor-footer .informacion article .apps i:hover {
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+    transition: 0.4s;
 }

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Montserrat&family=Poppins:wght@300&family=Tilt+Prism&display=swap');
-
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
@@ -10,12 +9,8 @@
     display: grid;
     height: 100%;
     grid-template-rows: 10vh 75vh 15vh;
-    grid-template-areas: 
-    "header  "
-    "content "
-    "footer  ";
+    grid-template-areas: "header  " "content " "footer  ";
 }
-
 
 .header {
     display: flex;
@@ -49,13 +44,14 @@
     color: #FFD966;
 }
 
+
 /*------------------------------------------------------------*/
 
 .contenedor-content {
     grid-area: content;
     width: 100%;
     height: 100%;
-    /* background-color: black; */
+    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,13 +196,55 @@
 
 /*------------------------------------------------------------*/
 
+.contenedor-content .informacion-persona .grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+.contenedor-content .informacion-persona .grid .grid-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contenedor-content .informacion-persona .grid .grid-1 .contenedor-num-documento {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+.contenedor-num-documento .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-num-documento .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 1%;
+}
+
+.contenedor-fecha {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+
+/*------------------------------------------------------------*/
+
 .footer {
     grid-area: footer;
     background-color: #FFD966;
     height: 100%;
 }
 
-.footer:hover{
+.footer:hover {
     box-shadow: 0 0 30px #FFD966;
     transition: 0.5s;
 }
@@ -224,7 +262,7 @@
     height: 100%;
 }
 
-.footer .contenedor-footer .contenedor-imagen .logo-png{
+.footer .contenedor-footer .contenedor-imagen .logo-png {
     width: 65%;
     height: 95%;
 }
@@ -237,7 +275,10 @@
     align-items: center;
 }
 
-.sebas,.william,.peter,.capera {
+.sebas,
+.william,
+.peter,
+.capera {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -253,7 +294,6 @@
 
 .footer .contenedor-footer .informacion article .apps i {
     color: black;
-    
 }
 
 .footer .contenedor-footer .informacion article .apps i:hover {

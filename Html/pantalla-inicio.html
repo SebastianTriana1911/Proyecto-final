@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="/Css/login.css">
+    <title>Pantalla de inicio</title>
+    <link rel="stylesheet" href="/Css/pantalla-inicio.css">
     <script src="https://kit.fontawesome.com/10d9a6ff24.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,66 +22,135 @@
 
 <!---------------------------------------------------------------->
 
-        <section class="contenedor-login">
-            <form class="formulario" method="get" action="terminos-condiciones.html">
-                <article class="contenedor-imagen">
-                    <img class="logo" src="/Img/Logo-png.png"/>
+        <nav class="nav">
+
+            <article class="primer-contenedor">
+                <h1>Johan Sebastian Triana Camacho</h1>
+                <h1>TI: 1013107159</h1>
+            </article>
+
+            <article class="segundo-contenedor">
+                <i class="fa-solid fa-user" style="color: #ffd966;"></i>
+                <h1>Usuario</h1>
+                <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+            </article>
+            
+        </nav>
+
+        <section class="contenedor-content">
+
+            <article class="contenedor-input-buscar">
+                
+                <form class="formulario-buscador" method="get" action="buscador-vacantes.html">
+
+                    <article class="buscar">
+                        <input class="input" type="search" placeholder="Consulta las diferentes vacantes disponibles">
+                    </article>
+
+                    <input class="boton-buscar" type="submit" name="buscar"value="Buscar"/>
+                </form>
+
+                <article class="contenedor-botones">
+                    <article class="boton">
+                        <a class="actualizacion" href="actualizacion-hoja.html" target="_blank">Actualizar datos</a>
+                        <a class="contraseña" href="cambio-contraseña.html" target="_blank">Cambiar contraseña</a>
+                    </article>
                 </article>
 
-                <section class="grid">
-                <section class="primera-barra">
-                    <article class="contenedor-titulo">
-                        <span class="titulo">Que usuario eres</span>
+            </article>
+
+            <h1 class="titulo-postulaciones">Mis postulaciones</h1>
+            <article class="contenedor-postulaciones">
+
+                <article class="cuadro-postulaciones">
+
+                    <article class="sintesis-postulacion">
+
+                        <article class="contenedor-titulo">
+                            <h1 class="titulo-postulacion">Datos de la vacante</h1>
+                        </article>
+
+                        <article class="cargo">
+                            <span class="titulo">Nombre del cargo: </span>
+                            <span class="valor">Desarrollador de software</span>
+                        </article>
+
+                        <article class="codigo-cargo">
+                            <span class="titulo">Codigo vacante: </span>
+                            <span class="valor">101310705</span>
+                        </article>
+
+                        <article class="nit-empresa">
+                            <span class="titulo">Nit empresa: </span>
+                            <span class="valor">10131515</span>
+                        </article>
+
+                        <article class="direccion">
+                            <span class="titulo">Direccion: </span>
+                            <span class="valor">Cra2 #36-50</span>
+                        </article>
+
                     </article>
 
-                    <section class="barra-checkbox">
-                        <article>
-                            <input class="checkbox" type="checkbox" value="admin"/> Admin
+                    <article class="sintesis-postulacion">
+
+                        <article class="contenedor-titulo">
+                            <h1 class="titulo-postulacion">Datos de la vacante</h1>
                         </article>
 
-                        <article>
-                            <input class="checkbox" type="checkbox"value="instructor"/> Instructor
+                        <article class="cargo">
+                            <span class="titulo">Nombre del cargo: </span>
+                            <span class="valor">Desarrollador de software</span>
                         </article>
 
-                        <article>
-                            <input class="checkbox" type="checkbox" value="seleccionador"/> Seleccionador
+                        <article class="codigo-cargo">
+                            <span class="titulo">Codigo vacante: </span>
+                            <span class="valor">101310705</span>
                         </article>
 
-                        <article>
-                            <input class="checkbox" type="checkbox" value="reclutador"/> Reclutador
+                        <article class="nit-empresa">
+                            <span class="titulo">Nit empresa: </span>
+                            <span class="valor">10131515</span>
                         </article>
 
-                        <article>
-                            <input class="checkbox" type="checkbox" value="candidato"/> Candidato
+                        <article class="direccion">
+                            <span class="titulo">Direccion: </span>
+                            <span class="valor">Cra2 #36-50</span>
                         </article>
 
-                    </section>
-                </section>
-
-                <section class="segunda-barra">
-                    <section class="informacion-barra-2">
-
-                        <article>
-                            <h1 class="titulo-documento">Num Documento: </h1>
-                            <input class="input" type="number" placeholder="Ingrese su numero de documeto">
-                        </article>
-                    
-                        <article>
-                            <h1 class="titulo-contraseña">Contraseña: </h1>
-                            <input class="input" type="password" placeholder="Ingrese su contraseña">
-                        </article>
-
-                    </section>
-                </section>
-
-                <section class="tercera-barra">
-                    <article>
-                        <input class="iniciar" type="submit" name="iniciar" value="Iniciar"/>
-                        <a class="olvido" href="" target="_blank">¿Olvidaste tu contraseña?</a>
                     </article>
-                </section>
-                </section>
-            </form>
+
+                    <article class="sintesis-postulacion">
+
+                        <article class="contenedor-titulo">
+                            <h1 class="titulo-postulacion">Datos de la vacante</h1>
+                        </article>
+
+                        <article class="cargo">
+                            <span class="titulo">Nombre del cargo: </span>
+                            <span class="valor">Desarrollador de software</span>
+                        </article>
+
+                        <article class="codigo-cargo">
+                            <span class="titulo">Codigo vacante: </span>
+                            <span class="valor">101310705</span>
+                        </article>
+
+                        <article class="nit-empresa">
+                            <span class="titulo">Nit empresa: </span>
+                            <span class="valor">10131515</span>
+                        </article>
+
+                        <article class="direccion">
+                            <span class="titulo">Direccion: </span>
+                            <span class="valor">Cra2 #36-50</span>
+                        </article>
+
+                    </article>
+
+                </article>
+            </article>
+
         </section>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------->

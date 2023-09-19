@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="/Css/login.css">
+    <title>Inspeccionar Busqueda</title>
+    <link rel="stylesheet" href="/Candidato/Css/inspeccion-busqueda.css">
     <script src="https://kit.fontawesome.com/10d9a6ff24.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,66 +22,34 @@
 
 <!---------------------------------------------------------------->
 
-        <section class="contenedor-login">
-            <form class="formulario" method="get" action="terminos-condiciones.html">
-                <article class="contenedor-imagen">
-                    <img class="logo" src="/Img/Logo-png.png"/>
-                </article>
+        <section class="contenedor-content ">
+    
+            <section class="contenedor-imagen">
+                <img class="imagen" src="/Candidato/Img/imagen-2.jpeg" alt="imagen-buscador"/>
+            </section>
 
-                <section class="grid">
-                <section class="primera-barra">
-                    <article class="contenedor-titulo">
-                        <span class="titulo">Que usuario eres</span>
+            <section class="contenedor-buscador">
+
+                <form class="contenedor-cuadro" method="get" action="/Candidato/Html/inspeccionar-vacantes.html">
+                    <article class="informacion">
+                        <article clas="titulo-barra">
+                            <h1 class="titulo">Buscador de vacantes</h1>
+                            <h1 class="barra"></h1>
+                        </article>
+
+                        <article class="contenedor-input">
+                            <input class="input" type="search" placeholder="Consulta las diferentes vacantes disponibles">
+                        </article>
+
+                    <article class="botones">
+                        <a class="boton-volver" href="/Candidato/Html/index.html">Volver</a>
+                        <input class="boton-buscar" type="submit" name="buscar" value="Buscar"/>
+                        <!-- <a class="boton-buscar" href="inspeccionar-vacantes.html" target="_blank">Buscar</a>                     -->
                     </article>
-
-                    <section class="barra-checkbox">
-                        <article>
-                            <input class="checkbox" type="checkbox" value="admin"/> Admin
-                        </article>
-
-                        <article>
-                            <input class="checkbox" type="checkbox"value="instructor"/> Instructor
-                        </article>
-
-                        <article>
-                            <input class="checkbox" type="checkbox" value="seleccionador"/> Seleccionador
-                        </article>
-
-                        <article>
-                            <input class="checkbox" type="checkbox" value="reclutador"/> Reclutador
-                        </article>
-
-                        <article>
-                            <input class="checkbox" type="checkbox" value="candidato"/> Candidato
-                        </article>
-
-                    </section>
-                </section>
-
-                <section class="segunda-barra">
-                    <section class="informacion-barra-2">
-
-                        <article>
-                            <h1 class="titulo-documento">Num Documento: </h1>
-                            <input class="input" type="number" placeholder="Ingrese su numero de documeto">
-                        </article>
-                    
-                        <article>
-                            <h1 class="titulo-contraseña">Contraseña: </h1>
-                            <input class="input" type="password" placeholder="Ingrese su contraseña">
-                        </article>
-
-                    </section>
-                </section>
-
-                <section class="tercera-barra">
-                    <article>
-                        <input class="iniciar" type="submit" name="iniciar" value="Iniciar"/>
-                        <a class="olvido" href="" target="_blank">¿Olvidaste tu contraseña?</a>
                     </article>
-                </section>
-                </section>
-            </form>
+                </form>
+
+            </section>
         </section>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------->
@@ -90,7 +58,7 @@
             <section class="contenedor-footer">
             
                     <article class="contenedor-imagen">
-                        <img class="logo-png" src="/Img/Logo-png.png"/>
+                        <img class="logo-png" src="/Candidato/Img/Logo-png.png"/>
                     </article>
                 
                     <section class="informacion">

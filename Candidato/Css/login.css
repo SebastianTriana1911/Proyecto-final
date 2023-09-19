@@ -62,6 +62,12 @@
     background-color: black ;
 }
 
+.contenedor-login .home {
+    position: relative;
+    top: -43%;
+    left: -15%
+}
+
 .formulario {
     display: flex;
     width: 65%;

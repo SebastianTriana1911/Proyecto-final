@@ -156,8 +156,8 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
     height: 100%;
+    margin-left: 3%;
 }
 
 .contenedor-content .contenedor-informacion .contenedor-instructor .contenedor-logo i {
@@ -166,7 +166,7 @@ body::-webkit-scrollbar-thumb{
 
 .contenedor-content .contenedor-informacion .contenedor-instructor .contenedor-nombre {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     width: 90%;
     height: 100%;
